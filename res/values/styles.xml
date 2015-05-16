@@ -20,7 +20,9 @@
 
     <color name="my_color">#338FCC</color>  
     <color name="blue_button">#0066CC</color>
-    
+    <color name="login_text">#FFFFFF</color>
+    <color name="link_normal">#6666FF</color>
+    <color name="link_pressed">#330099</color>
     <style name="normalText" parent="@android:style/TextAppearance">                        
         <item name="android:textColor">#444</item>  
         <item name="android:textSize">14sp</item>  

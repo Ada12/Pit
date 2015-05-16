@@ -1,25 +1,25 @@
 package com.example.zeducation;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import android.content.Intent;
 
 @SuppressLint("ResourceAsColor") public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-//        Context context = MainActivity.this;
-//        LayoutInflater inflater = (LayoutInflater)context.getSystemService(LAYOUT_INFLATER_SERVICE);
-//        View layout = inflater.inflate(R.layout.activity_main,null);
-//        layout.setBackgroundColor(android.graphics.Color.BLUE);
-        //android:theme="@android:style/Theme.NoTitleBar"
+        Handler x = new Handler();
+        x.postDelayed(new lunchhandler(), 2000);
     }
 
 
@@ -30,4 +30,13 @@ import android.view.View;
         return true;
     }
     
+    class lunchhandler implements Runnable{
+
+        public void run() {
+            startActivity(new Intent(getApplication(),LoginActivity.class));
+            MainActivity.this.finish();
+        }
+
+        
+    }
 }
