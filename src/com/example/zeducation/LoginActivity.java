@@ -26,6 +26,9 @@ public class LoginActivity extends Activity {
             public void onClick(View v) {  
                 // TODO Auto-generated method stub  
                 Toast.makeText(getApplicationContext(), "Äãµã»÷ÁËbutton°´Å¥", Toast.LENGTH_SHORT).show();  
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);
+                LoginActivity.this.finish();
             }  
         }); 
         TextView findPassword = (TextView)this.findViewById(R.id.login_forgot_password);
@@ -34,7 +37,17 @@ public class LoginActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				Intent intent = new Intent(LoginActivity.this, TestActivity.class);
+				Intent intent = new Intent(LoginActivity.this, FindPasswordActivity.class);
+				startActivity(intent);
+			}
+		});
+        TextView signUp = (TextView)this.findViewById(R.id.register_link);
+        signUp.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
 				startActivity(intent);
 			}
 		});

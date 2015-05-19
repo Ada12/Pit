@@ -14,5 +14,17 @@
     <string name="login_forgot_password"><a href="#" mce_href="#">Forgot your password?</a></string>
     <string name="login_register_link"><a href="#" mce_href="#">Join the ZEducation</a></string>
     <string name="title_activity_login">LoginActivity</string>
-
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_find_password">FindPasswordActivity</string>
+    <string name="register_label_signup">Sign up</string>
+    <string name="register_login_link"><a href="#" mce_href="#">Sign in now!</a></string>
+    <string name="register_label_email">Email:</string>
+    <string name="register_label_password">Password:</string>
+    <string name="register_label_password_confirm">Password Confirm:</string>
+    <string name="find_password_old_password">Old Password:</string>
+    <string name="find_password_new_password">New Password:</string>
+    <string name="find_password_new_password_confirm">Password Confirm:</string>
+    <string name="find_password_submit">submit</string>
+    <string name="title_activity_home">ZEducation</string>
+	<string name="test">Test</string>
 </resources>
