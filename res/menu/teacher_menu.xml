@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <item  
+        android:id="@+id/menu_apply_teacher"  
+        android:icon="@drawable/course"  
+        android:orderInCategory="101"  
+        android:showAsAction="ifRoom|withText"  
+        android:title="refresh"/>  
+    <item  
+        android:id="@+id/menu_apply_account"  
+        android:icon="@drawable/allinfo"  
+        android:orderInCategory="101"  
+        android:showAsAction="ifRoom"  
+        android:title="about"/>  
+    <item  
+        android:id="@+id/menu_logoff"  
+        android:icon="@drawable/logoff"  
+        android:orderInCategory="103"  
+        android:showAsAction="ifRoom"/>  
+</menu>

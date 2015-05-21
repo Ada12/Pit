@@ -26,5 +26,17 @@
     <string name="find_password_new_password_confirm">Password Confirm:</string>
     <string name="find_password_submit">submit</string>
     <string name="title_activity_home">ZEducation</string>
-	<string name="test">Test</string>
+    <string name="test">Test</string>
+    <string name="home_apply_teacher">Apply</string>
+    <string name="title_activity_apply_account">ZEducation</string>
+    <string name="apply_account_accountid_label">Account Id:</string>
+    <string name="apply_account_password_label">Password:</string>
+    <string name="apply_account_valid_label">Is Valid:</string>
+    <string name="apply_account_accountid">123456</string>
+    <string name="apply_account_password">000000</string>
+    <string name="apply_account_valid">Yes</string>
+    <string name="title_activity_teacher_home">ZEducation</string>
+    <string name="title_activity_all_courses">ZEducation</string>
+	<string name="all_courses_close_course">Close</string>
+	<string name="all_course_connector">------</string>
 </resources>

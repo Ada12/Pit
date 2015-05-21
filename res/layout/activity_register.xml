@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+    <RelativeLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/ZEducation_logo"  
+             android:src="@drawable/logo"  
+             android:layout_width="wrap_content"  
+             android:layout_height="wrap_content"  
+             android:layout_alignParentTop="true" 
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="40dp"
+             android:layout_marginBottom="40dp" 
+          />  
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg">
+        
+        <TextView  
+            android:id="@+id/email_label"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentTop="true"  
+            android:layout_marginTop="5dp"  
+            android:text="@string/register_label_email"  
+            style="@style/normalText"
+            />  
+            
+        <EditText
+            android:id="@+id/email_edit"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:hint="@string/login_username_hint"  
+            android:layout_below="@id/email_label"  
+            android:singleLine="true"  
+            android:inputType="text"
+            />
+        
+        <TextView  
+            android:id="@+id/password_label"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/email_edit"  
+            android:layout_marginTop="3dp"  
+            android:text="@string/register_label_password"  
+            style="@style/normalText"/>  
+    	<EditText  
+            	android:id="@+id/password_edit"  
+            	android:layout_width="fill_parent"  
+            	android:layout_height="wrap_content"  
+            	android:layout_below="@id/password_label"  
+            	android:password="true"  
+            	android:singleLine="true"  
+            	android:inputType="textPassword"  
+    			/>  
+    	
+    	<TextView  
+            android:id="@+id/password_confirm_label"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/password_edit"  
+            android:layout_marginTop="3dp"  
+            android:text="@string/register_label_password_confirm"  
+            style="@style/normalText"/> 
+    	<EditText  
+            	android:id="@+id/password_confirm_edit"  
+            	android:layout_width="fill_parent"  
+            	android:layout_height="wrap_content"  
+            	android:layout_below="@id/password_confirm_label"  
+            	android:password="true"  
+            	android:singleLine="true"  
+            	android:inputType="textPassword"  
+    			/> 
+    		
+    	<Button  
+            	android:id="@+id/signup_button"  
+            	android:layout_width="wrap_content"  
+            	android:layout_height="wrap_content"  
+            	android:layout_below="@id/password_confirm_edit"  
+            	android:layout_alignRight="@id/password_edit"  
+            	android:text="@string/register_label_signup"  
+            	android:textColor="@color/login_text"
+            	android:layout_marginTop="10dp"  
+            	android:background="@drawable/button"  
+    			/>  
+    </RelativeLayout>
+    
+    <RelativeLayout  
+      android:layout_width="fill_parent"  
+      android:layout_height="wrap_content"  
+      >   
+         <ImageView android:id="@+id/mainframe_logo"  
+             android:src="@drawable/mainframe"  
+             android:layout_width="wrap_content"  
+             android:layout_height="wrap_content"  
+             android:layout_alignParentRight="true"  
+             android:layout_alignParentBottom="true" 
+             android:layout_marginRight="40dp"   
+             android:layout_marginBottom="50dp" 
+          />  
+ 
+     </RelativeLayout>  
+    
+</LinearLayout>

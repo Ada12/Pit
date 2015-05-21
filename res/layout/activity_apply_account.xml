@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/applybg">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_account_accountid_label" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/apply_account_accountid" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:text="@string/apply_account_password_label" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/apply_account_password" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:text="@string/apply_account_valid_label" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/home_apply_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="@string/apply_account_valid" />
+    </RelativeLayout>
+
+</LinearLayout>

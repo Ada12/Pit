@@ -25,7 +25,7 @@ public class LoginActivity extends Activity {
             @Override  
             public void onClick(View v) {  
                 // TODO Auto-generated method stub  
-                Toast.makeText(getApplicationContext(), "Äãµã»÷ÁËbutton°´Å¥", Toast.LENGTH_SHORT).show();  
+                Toast.makeText(getApplicationContext(), "Logging", Toast.LENGTH_SHORT).show();  
                 Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
                 LoginActivity.this.finish();
