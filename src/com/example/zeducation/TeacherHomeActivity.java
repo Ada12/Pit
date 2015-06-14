@@ -1,5 +1,12 @@
 package com.example.zeducation;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -13,15 +20,40 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class TeacherHomeActivity extends Activity {
-	private String[] pattern = {"Pattern1","Pattern2","Pattern3","Pattern4"};
+//	private String[] patternName = {"Pattern1","Pattern2","Pattern3","Pattern4"};
+	private String[] patternName;
+	private String[] patternDesc;
 	private Spinner spinner;
 	private ArrayAdapter<String> adapter;
+	private String email;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_teacher_home);
+		Bundle bundle = this.getIntent().getExtras();
+		email = bundle.getString("email");
+		((ApplicationTrans)getApplication()).setUsername(email);
+		String patternUrl = "";
+		try {
+			RetriveData rd = new RetriveData();
+			rd.setGET_URL(patternUrl);
+			String result = rd.sendGet();
+			JSONObject resultObject = new JSONObject(result);
+			JSONArray patternMsg =  resultObject.getJSONArray("pattern_msg");
+			for(int i=0; i<patternMsg.length(); i++){
+				JSONObject pm = patternMsg.getJSONObject(i);
+				patternName[i] = pm.getString("pattern_name");
+				patternDesc[i] = pm.getString("pattern_desc");
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		spinner = (Spinner)this.findViewById(R.id.teacher_home_apply_course);
-		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, pattern);
+		adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, patternName);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
 		//spinner.setOnItemSelectedListener(new SpinnerSelectedListener());

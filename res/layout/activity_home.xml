@@ -9,10 +9,21 @@
     tools:context=".HomeActivity"
     android:background="@drawable/applybg" >
 
+    <TextView 
+        android:id="@+id/home_apply_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip"
+        style="@style/apply_status"
+        />
+    
     <Spinner 
         android:id="@+id/home_apply_select_colledge"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_apply_status"  />
     
     <Button
         android:id="@+id/home_apply_teacher_button"

@@ -6,7 +6,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_test">TestActivity</string>
     <string name="hello">Hello World, LoginActivity!</string>
-    <string name="login_label_username">Username</string>
+    <string name="login_label_username">Email</string>
     <string name="login_label_password">Password</string>
     <string name="login_label_signin">Sign in</string>
     <string name="login_status_logging_in">Login...</string>
@@ -21,6 +21,14 @@
     <string name="register_label_email">Email:</string>
     <string name="register_label_password">Password:</string>
     <string name="register_label_password_confirm">Password Confirm:</string>
+    <string name="register_label_name">Name:</string>
+    <string name="register_label_gender">Gender:</string>
+    <string name="register_label_phone">Phone:</string>
+    <string name="register_label_organization">Organization:</string>
+    <string name="register_label_department">Department:</string>
+    <string name="register_label_position">Position:</string>
+    <string name="register_label_region">Region:</string>
+    <string name="must">*</string>
     <string name="find_password_old_password">Old Password:</string>
     <string name="find_password_new_password">New Password:</string>
     <string name="find_password_new_password_confirm">Password Confirm:</string>

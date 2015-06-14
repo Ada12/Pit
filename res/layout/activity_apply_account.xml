@@ -6,6 +6,7 @@
     android:background="@drawable/applybg">
     
     <RelativeLayout
+        android:id="@+id/account_msg"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dip"
@@ -20,12 +21,12 @@
             android:text="@string/apply_account_accountid_label" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/account_id"
             style="@style/home_apply_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/textView1"
-            android:text="@string/apply_account_accountid" />
+            />
 
         <TextView
             android:id="@+id/textView2"
@@ -36,13 +37,13 @@
             android:text="@string/apply_account_password_label" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/account_password"
             style="@style/home_apply_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView1"
             android:layout_toRightOf="@+id/textView1"
-            android:text="@string/apply_account_password" />
+            />
 
         <TextView
             android:id="@+id/textView5"
@@ -53,13 +54,28 @@
             android:text="@string/apply_account_valid_label" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/account_valid"
             style="@style/home_apply_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView2"
             android:layout_toRightOf="@+id/textView1"
-            android:text="@string/apply_account_valid" />
+            />
+        
+        
+        <Button
+            	android:id="@+id/apply_account"  
+            	android:layout_width="wrap_content"  
+            	android:layout_height="wrap_content"  
+            	android:layout_below="@id/account_valid"  
+            	android:layout_centerHorizontal="true"
+            	android:layout_centerVertical="true"
+            	android:text="@string/home_apply_teacher"  
+            	android:textColor="@color/login_text"
+            	android:layout_marginTop="10dp"  
+            	android:background="@drawable/button"  
+    			/>
+        
     </RelativeLayout>
 
 </LinearLayout>

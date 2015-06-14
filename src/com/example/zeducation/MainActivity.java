@@ -13,7 +13,9 @@ import android.widget.Toast;
 import android.content.Intent;
 
 @SuppressLint("ResourceAsColor") public class MainActivity extends Activity {
-
+	
+	public String email;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
