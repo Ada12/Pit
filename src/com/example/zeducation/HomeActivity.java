@@ -35,10 +35,15 @@ public class HomeActivity extends Activity{
 		spinner.setAdapter(adapter);
 		//spinner.setOnItemSelectedListener(new SpinnerSelectedListener());
 		spinner.setVisibility(View.VISIBLE);
-		//Intent intent = new Intent();
-		Bundle bundle = this.getIntent().getExtras();
-		email = bundle.getString("email");
-		((ApplicationTrans)getApplication()).setUsername(email);
+		String myFlag = "1";
+		if(((ApplicationTrans) getApplication()).getFlag() == null){
+			((ApplicationTrans)getApplication()).setFlag(myFlag);
+			Bundle bundle = this.getIntent().getExtras();
+			email = bundle.getString("email");
+			((ApplicationTrans)getApplication()).setUsername(email);
+		}else{
+			email = ((ApplicationTrans) getApplication()).getUsername();
+		}
 		applyStatus = (TextView)this.findViewById(R.id.home_apply_status);
 		Button apply = (Button)this.findViewById(R.id.home_apply_teacher_button);
 //		try {

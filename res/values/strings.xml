@@ -45,6 +45,9 @@
     <string name="apply_account_valid">Yes</string>
     <string name="title_activity_teacher_home">ZEducation</string>
     <string name="title_activity_all_courses">ZEducation</string>
-	<string name="all_courses_close_course">Close</string>
-	<string name="all_course_connector">------</string>
+    <string name="all_courses_close_course">close</string>
+    <string name="all_course_connector">------</string>
+    <string name="teacher_home_course_name">Course Name:</string>
+    <string name="title_activity_apply_history">ApplyHistoryActivity</string>
+
 </resources>

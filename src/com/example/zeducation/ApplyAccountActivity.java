@@ -45,14 +45,15 @@ public class ApplyAccountActivity extends Activity {
 //			rd.setPOST_URL(applyTempStatusUrl);
 //			String result = rd.sendPOST(applyTempStastusObject);
 //			JSONObject resultObject = new JSONObject(result);
+//≤‚ ‘¥˙¬Î
 			JSONObject resultObject = new JSONObject();
 			JSONObject testObject = new JSONObject();
 			testObject.put("account_id", "iiiiiid");
 			testObject.put("password", "ppppppp");
 			testObject.put("is_valid", "vvvvvvv");
-			resultObject.putOpt("account_msg", testObject);
+			resultObject.put("account_msg", testObject);
 			resultObject.put("return_msg", "1");
-			
+//≤‚ ‘¥˙¬Î			
 			String returnMsg = resultObject.getString("return_msg");
 			if(returnMsg.equals("0")){
 				accountId.setVisibility(View.GONE);

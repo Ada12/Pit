@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >  
     <item  
-        android:id="@+id/menu_apply_teacher"  
+        android:id="@+id/menu_apply_course"  
         android:icon="@drawable/course"  
         android:orderInCategory="101"  
         android:showAsAction="ifRoom|withText"  
-        android:title="refresh"/>  
+        android:title="refresh"/>
     <item  
-        android:id="@+id/menu_apply_account"  
+        android:id="@+id/menu_apply_history"  
+        android:icon="@drawable/apply_history"  
+        android:orderInCategory="101"  
+        android:showAsAction="ifRoom"  
+        android:title="about"/> 
+    <item  
+        android:id="@+id/menu_all_course"  
         android:icon="@drawable/allinfo"  
         android:orderInCategory="101"  
         android:showAsAction="ifRoom"  

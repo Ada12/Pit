@@ -9,20 +9,53 @@
     tools:context=".TeacherHomeActivity"
     android:background="@drawable/applybg" >
 
+    <ListView  
+        android:id="@+id/pattern_msg"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content" >  
+    </ListView> 
+    
+     <RelativeLayout 
+        android:layout_below="@id/pattern_msg"  
+        android:id="@+id/login_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/background_login_div_bg">
+    
+    <TextView  
+            android:id="@+id/teacher_home_course_name"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginTop="3dp"  
+            android:text="@string/teacher_home_course_name"  
+            style="@style/normalText"/>  
+    <EditText  
+           	android:id="@+id/teacher_home_course_name_edit"  
+           	android:layout_width="fill_parent"  
+           	android:layout_height="wrap_content"  
+           	android:layout_below="@id/teacher_home_course_name"  
+    		/>  
+    
     <Spinner 
         android:id="@+id/teacher_home_apply_course"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"/>"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_home_course_name_edit"
+        android:layout_marginTop="10dip"
+        />"
     
     <Button
         android:id="@+id/teacher_home_apply_course_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="114dp"
+        android:layout_marginTop="50dip"
+        android:layout_below="@+id/teacher_home_apply_course"
         android:background="@drawable/button"
         android:text="@string/home_apply_teacher"
         android:textColor="@color/login_text" />
+     </RelativeLayout>
 
 </RelativeLayout>
